@@ -1,0 +1,12 @@
+schema: "classroom50/repo-config/v1"
+classroom: "ds112"
+assignment: "portfolio"
+owner:
+  username: "khue2608"
+  id: 261358268
+  accepted_at: "2026-09-09T04:50:45Z"
+source:
+  owner: "mac-ds112-f26"
+  owner_id: 323651608
+  repo: "portfolio-template"
+  branch: "main"
