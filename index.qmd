@@ -2,29 +2,24 @@
 title: "Welcome"
 ---
 
-
-Welcome to my online portfolio for COMP/STAT112 course taken at [Macalester College](https://www.macalester.edu/).  Please, use the side bar on the left for navigation.
-
-```{r}
-#| output: false
-#| echo: false
-
-packages <- c("wordcloud2", "here")
-```
-
-```{r}
-#| output: false
-#| echo: false
-
-install.packages(setdiff(packages, rownames(installed.packages())), repos = "http://cran.us.r-project.org")
-```
+Welcome to my online portfolio for COMP/STAT112 course taken at [Macalester College](https://www.macalester.edu/). Please, use the side bar on the left for navigation.
 
 ```{r}
 #| output: false
 #| echo: false
 #| message: false
 
-lapply(packages, require, character.only = TRUE)
+# 1. Define required packages
+packages <- c("wordcloud2", "here")
+
+# 2. Install missing packages
+new_pkgs <- setdiff(packages, rownames(installed.packages()))
+if (length(new_pkgs) > 0) {
+  install.packages(new_pkgs, repos = "[http://cran.us.r-project.org](http://cran.us.r-project.org)")
+}
+
+# 3. Load packages
+lapply(packages, library, character.only = TRUE)
 ```
 
 ```{r}
@@ -39,4 +34,3 @@ ds <- read.csv(here("assets", "msg.csv"))
 
 wordcloud2(data = ds, shape = "cardioid")
 ```
-
