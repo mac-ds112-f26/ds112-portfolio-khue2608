@@ -78,7 +78,7 @@ book:
       - ica/quarto-demo.qmd
       - ica/ica-sample1.qmd
       - ica/ica-sample2.qmd
-      -ica/ica-05-multivariate-viz.qmd
+      - ica/06-spatial-viz_kle.qmd
 
 
     - part: "Extras"
