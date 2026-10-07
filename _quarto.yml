@@ -78,8 +78,10 @@ book:
       - ica/quarto-demo.qmd
       - ica/ica-sample1.qmd
       - ica/ica-sample2.qmd
+      - ica/04-bivariate-viz-exercises.qmd
       - ica/06-spatial-viz_kle.qmd
       - ica/05-multivariate-viz-kle.qmd
+
 
 
     - part: "Extras"
