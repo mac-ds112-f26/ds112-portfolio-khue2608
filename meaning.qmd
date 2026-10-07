@@ -1,0 +1,20 @@
+---
+title: "meaning"
+format: html
+---
+```{r}
+hey<-read_csv("https://hash-mac.github.io/ds112site-f26/data/survey.csv")
+
+```
+```{r}
+```
+
+
+```{r}
+head(hey,10)
+```
+```{r}
+ggplot(hey,aes(x=fav_temp_c)) + geom_bar(color = "orange", fill = "blue") 
+
+```
+
