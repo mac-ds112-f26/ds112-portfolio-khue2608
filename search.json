@@ -461,6 +461,83 @@
     ]
   },
   {
+    "objectID": "ica/07-effective-viz-completed.html",
+    "href": "ica/07-effective-viz-completed.html",
+    "title": "Effective Visualization — Completed Exercises",
+    "section": "",
+    "text": "Professionalism",
+    "crumbs": [
+      "In-Class Activities",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Effective Visualization — Completed Exercises</span>"
+    ]
+  },
+  {
+    "objectID": "ica/07-effective-viz-completed.html#professionalism",
+    "href": "ica/07-effective-viz-completed.html#professionalism",
+    "title": "Effective Visualization — Completed Exercises",
+    "section": "",
+    "text": "Add Labels\n\nCodelibrary(tidyverse)\n\nweather &lt;- read.csv(\"https://mac-stat.github.io/data/weather_3_locations.csv\") |&gt;\n  mutate(date = as.Date(date))\n\n\ncd ~/Documents/GitHub/ds112-portfolio-khue2608/ The starting plot shows the relationship between morning and afternoon temperatures across three Australian locations.\n\nCodeggplot(weather, aes(x = temp9am, y = temp3pm, color = location)) +\n  geom_point() +\n  labs(\n    x = \"9 a.m. temperature (°C)\",\n    y = \"3 p.m. temperature (°C)\",\n    title = \"Morning and Afternoon Temperatures in Australia\",\n    color = \"Location\"\n  )\n\n\n\n\n\n\n\nAdd Figure Caption\nA figure caption describes what the points represent and replaces the plot title.\n\nCodeggplot(weather, aes(x = temp9am, y = temp3pm, color = location)) +\n  geom_point() +\n  labs(\n    x = \"9 a.m. temperature (°C)\",\n    y = \"3 p.m. temperature (°C)\",\n    color = \"Location\"\n  )\n\n\n\nDaily 9 a.m. and 3 p.m. temperatures (°C) in three Australian locations. Each point represents one observation day; color identifies the location. Data: Macalester Statistics weather dataset.\n\n\n\n\n\n\n\nDaily 9 a.m. and 3 p.m. temperatures (°C) in three Australian locations, with each day shown as a point. Colors distinguish locations.",
+    "crumbs": [
+      "In-Class Activities",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Effective Visualization — Completed Exercises</span>"
+    ]
+  },
+  {
+    "objectID": "ica/07-effective-viz-completed.html#accessibility",
+    "href": "ica/07-effective-viz-completed.html#accessibility",
+    "title": "Effective Visualization — Completed Exercises",
+    "section": "Accessibility",
+    "text": "Accessibility\nAdd Alt Text\nThe alt text identifies the graph, the axes, the groups, and an interpretation that does not assume an unverified ordering of the locations.\n\nCodeggplot(weather, aes(x = temp3pm, fill = location)) +\n  geom_density(alpha = 0.5, na.rm = TRUE) +\n  labs(x = \"3 p.m. temperature (°C)\", y = \"Density\", fill = \"Location\")\n\n\n\nDistributions of 3 p.m. temperatures in three Australian locations. Source: https://mac-stat.github.io/data/weather_3_locations.csv.\n\n\n\n\n\n\n\nDensity plots of 3 p.m. temperatures in three Australian locations.\n\n\n\nCheck Color Accessibility\nResponse: Colors that are easy to distinguish with typical color vision may become difficult to separate for people with red–green or other color-vision differences. In this density plot, semi-transparent filled areas overlap, so similar-looking colors can blend together and make it difficult to determine which curve belongs to which location. This could cause readers to compare the wrong distributions or miss differences between locations. A color-vision-friendly palette, clear outlines, and direct labels or different line types would improve accessibility. This is a design-based assessment; an actual simulator check must be performed separately to document its particular output.\nTry Color-Blind Palettes\nDiscrete palette because location is categorical:\n\nCodeggplot(weather, aes(x = temp3pm, fill = location)) +\n  geom_density(alpha = 0.5, na.rm = TRUE) +\n  labs(x = \"3 p.m. temperature (°C)\", y = \"Density\", fill = \"Location\") +\n  scale_fill_viridis_d()\n\n\n\n\n\n\n\nContinuous palette because maxtemp is numeric:\n\nCodeggplot(weather, aes(x = temp9am, y = temp3pm, color = maxtemp)) +\n  geom_point(alpha = 0.5, na.rm = TRUE) +\n  labs(\n    x = \"9 a.m. temperature (°C)\",\n    y = \"3 p.m. temperature (°C)\",\n    color = \"Maximum temperature (°C)\"\n  ) +\n  scale_color_viridis_c()\n\n\n\n\n\n\n\nResponse: scale_fill_viridis_d() is appropriate for discrete locations, while scale_color_viridis_c() is appropriate for continuously measured maximum temperature. Viridis palettes generally offer more distinguishable changes in both hue and lightness than many default palettes. However, color should not be the only way to communicate essential information.",
+    "crumbs": [
+      "In-Class Activities",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Effective Visualization — Completed Exercises</span>"
+    ]
+  },
+  {
+    "objectID": "ica/07-effective-viz-completed.html#ethics",
+    "href": "ica/07-effective-viz-completed.html#ethics",
+    "title": "Effective Visualization — Completed Exercises",
+    "section": "Ethics",
+    "text": "Ethics\nSpot Misleading Viz\n\nResponse: This climate-change visualization is problematic if its axis scale, time window, omissions, or visual framing makes the magnitude or direction of temperature change appear different from what the data support. In particular, a short or selectively chosen period can hide a long-term trend, while a distorted vertical scale can exaggerate or minimize changes. Readers could wrongly conclude that climate change has stopped, is much less serious than evidence suggests, or is more abrupt than shown by the underlying data. That may influence public opinion and policy decisions. An ethical revision should label the axes and units, show the data source, provide an appropriate time span, and explain variability alongside the long-term trend. The specific distortion should be confirmed by examining the displayed axes and source data before claiming one particular manipulation.\nDiscuss Viz Approaches\nChosen example: W. E. B. Du Bois’s 1900 data visualizations of Black life in the United States.\nResponse: Du Bois and his collaborators emphasized visibility by documenting Black Americans’ circumstances at a time when their achievements and social conditions were frequently ignored or misrepresented. The charts also address power: presenting evidence about education, occupations, property, and social change challenged dominant racist narratives. Strong design choices, distinctive layouts, and visual storytelling add emotion and context rather than treating people as abstract numbers. Compared with a standard bar chart, these designs can better attract attention, connect related facts into a broader historical argument, and encourage viewers to consider the lived experiences behind the statistics. Nevertheless, the visuals still need clear scales, sources, and labels so striking design does not obscure interpretation.\nSource: Du Bois visualization collection.\nRead Data Feminism\nReading response: Data Feminism argues that data are not neutral: decisions about what to count, whose experiences to include, and how findings are displayed are shaped by social power. A responsible visualization should consider who produced the data, who is missing, who benefits from the interpretation, and who might be harmed. For example, presenting a neighborhood average without showing differences among residents can hide inequality. I would apply these ideas by documenting missing data, providing context, choosing accessible visual encodings, and considering privacy when mapping individual-level locations.\nReading: Data Feminism.",
+    "crumbs": [
+      "In-Class Activities",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Effective Visualization — Completed Exercises</span>"
+    ]
+  },
+  {
+    "objectID": "ica/07-effective-viz-completed.html#critique",
+    "href": "ica/07-effective-viz-completed.html#critique",
+    "title": "Effective Visualization — Completed Exercises",
+    "section": "Critique",
+    "text": "Critique\nCritique Viz\nSelected graphic: Wind Map by Fernanda Viégas and Martin Wattenberg (listed in Modern Data Science with R, Exercise 2.5).\n\n\nStory and main message: The animated map shows how wind patterns vary geographically across the United States. Its main message is spatial movement: winds flow in different directions and form broader regional patterns rather than behaving the same everywhere.\n\nGrammar of Graphics: The frame is a map of the United States, using geographic position as the coordinate system. The glyphs are moving traces or streamlines. Position conveys geographic location; trace orientation and movement convey wind direction, while motion and trace appearance communicate wind patterns and relative intensity. The geographic scale is spatial rather than a simple category axis. The map uses a minimal guide and has no conventional faceting. Animation adds a time-dependent visual encoding beyond a basic static scatterplot.\n\nCritique: The moving streams make direction and the structure of wind systems much easier to understand than a static table of wind speeds. The design is visually engaging and makes regional circulation patterns salient. However, comparing exact numerical wind speeds is difficult without a clear quantitative scale, and animation is inaccessible to people who cannot view motion or who prefer reduced motion. I would provide an optional static view, descriptive text, and an explicit legend describing how speed is encoded. I would also include the observation time and data source prominently.",
+    "crumbs": [
+      "In-Class Activities",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Effective Visualization — Completed Exercises</span>"
+    ]
+  },
+  {
+    "objectID": "ica/07-effective-viz-completed.html#design-details",
+    "href": "ica/07-effective-viz-completed.html#design-details",
+    "title": "Effective Visualization — Completed Exercises",
+    "section": "Design Details",
+    "text": "Design Details\nNotice Selectivity\n\nResponse: Elements that differ strongly in color, orientation, size, or shape from their surroundings tend to attract attention first. The central lesson is that visual contrast can direct the viewer to the most important observation. In a scatterplot, for example, highlighting one relevant point while keeping the others light gray draws attention without removing context. Too many saturated colors would compete for attention and reduce this effect.\nNotice Familiarity\n\nResponse: Because the picture resembles a familiar rose, I first recognize the flower as a whole. Familiar shapes and expectations influence what I notice, so a less obvious image embedded within the flower may be overlooked on the first viewing. The same effect occurs when readers recognize a chart type quickly but miss an unusual pattern in the data.\nRevisit Rose Image\nResponse: The second rose image provides a clearer cue to inspect the shadows for a hidden figure or pattern. Once attention is directed to the shadows, details that were not obvious at first can become easier to recognize. This illustrates how attention and prior expectations affect interpretation; good visualizations guide viewers toward important information without distorting it.",
+    "crumbs": [
+      "In-Class Activities",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Effective Visualization — Completed Exercises</span>"
+    ]
+  },
+  {
+    "objectID": "ica/07-effective-viz-completed.html#wrapping-up",
+    "href": "ica/07-effective-viz-completed.html#wrapping-up",
+    "title": "Effective Visualization — Completed Exercises",
+    "section": "Wrapping up",
+    "text": "Wrapping up\nMain takeaways: Effective data visualizations need descriptive axes and captions, alternative text, accessible color choices, and honest scales and context. Visual design should emphasize important comparisons while considering the experiences and needs of the audience.",
+    "crumbs": [
+      "In-Class Activities",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Effective Visualization — Completed Exercises</span>"
+    ]
+  },
+  {
     "objectID": "extra/extra-sample1.html",
     "href": "extra/extra-sample1.html",
     "title": "Extra Sample 1",
@@ -468,7 +545,7 @@
     "text": "Add content here",
     "crumbs": [
       "Extras",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Extra Sample 1</span>"
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Extra Sample 1</span>"
     ]
   },
   {
@@ -479,7 +556,7 @@
     "text": "Add content here",
     "crumbs": [
       "Extras",
-      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Extra Sample 2</span>"
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Extra Sample 2</span>"
     ]
   }
 ]
