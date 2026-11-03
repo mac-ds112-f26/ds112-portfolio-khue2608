@@ -1,0 +1,14 @@
+---
+title: "Personal_Visulaization"
+author: "Khue Le"
+format: html
+editor: visual
+---
+```{r}
+library(tidyverse)
+
+isopods <- read_csv("isopod_data.csv")
+
+glimpse(isopods)
+head(isopods)
+```
