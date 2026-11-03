@@ -1,0 +1,93 @@
+﻿Date,Orange adults,Black adults,Orange juveniles,Black juveniles,Orange total,Black Total,Temp (°C),Moisture,Misted?,Food
+"Sep 18, 2026",30,30,0,0,30,30,21.3,Moist,Yes,Shrimp
+"Sep 19, 2026",30,30,0,0,30,30,21.6,Moist,No,Carrot
+"Sep 20, 2026",30,30,0,0,30,30,21.8,Moderate,No,Leaf litter
+"Sep 21, 2026",30,30,0,0,30,30,21.6,Moist,Yes,Zucchini
+"Sep 22, 2026",30,30,0,0,30,30,21.7,Moderate,No,Leaf litter
+"Sep 23, 2026",30,30,0,0,30,30,22.2,Dry,No,Fish flakes
+"Sep 24, 2026",30,30,0,0,30,30,22.3,Moist,Yes,Shrimp
+"Sep 25, 2026",30,30,0,0,30,30,22.9,Moist,No,Carrot
+"Sep 26, 2026",30,30,0,0,30,30,23.1,Moderate,No,Leaf litter
+"Sep 27, 2026",30,30,0,0,30,30,23.2,Moist,Yes,Zucchini
+"Sep 28, 2026",30,30,0,0,30,30,23.3,Moderate,No,Leaf litter
+"Sep 29, 2026",30,30,0,0,30,30,23.6,Dry,No,Fish flakes
+"Sep 30, 2026",30,30,5,0,35,30,23.4,Moist,Yes,Leaf litter
+"Oct 1, 2026",30,30,5,0,35,30,21.6,Moist,No,Carrot
+"Oct 2, 2026",30,30,5,0,35,30,21.2,Moderate,No,Shrimp
+"Oct 3, 2026",30,30,5,0,35,30,21.8,Moist,Yes,Zucchini
+"Oct 4, 2026",30,30,5,0,35,30,22.2,Moderate,No,Shrimp
+"Oct 5, 2026",30,30,14,0,44,30,22.4,Dry,No,Fish flakes
+"Oct 6, 2026",30,30,14,5,44,35,22.7,Moist,Yes,Leaf litter
+"Oct 7, 2026",30,30,14,5,44,35,22.4,Moist,No,Carrot
+"Oct 8, 2026",30,30,14,5,44,35,22.8,Moderate,No,Leaf litter
+"Oct 9, 2026",30,30,14,5,44,35,22.5,Moist,Yes,Zucchini
+"Oct 10, 2026",30,30,12,2,42,32,23,Moderate,No,Leaf litter
+"Oct 11, 2026",30,30,10,9,40,39,23.3,Dry,No,Fish flakes
+"Oct 12, 2026",30,30,10,1,40,31,23.7,Moist,Yes,Leaf litter
+"Oct 13, 2026",30,30,10,4,40,34,23.8,Moist,No,Carrot
+"Oct 14, 2026",30,30,10,5,40,35,21.5,Moderate,No,Leaf litter
+"Oct 15, 2026",30,30,10,5,40,35,21.3,Moist,Yes,Zucchini
+"Oct 16, 2026",30,30,20,5,50,35,21.9,Moderate,No,Leaf litter
+"Oct 17, 2026",30,30,21,8,51,38,22.2,Dry,No,Fish flakes
+"Oct 18, 2026",30,30,24,8,54,38,21.9,Moist,Yes,Leaf litter
+"Oct 19, 2026",30,30,24,8,54,38,22.5,Moist,No,Carrot
+"Oct 20, 2026",30,30,24,8,54,38,22.2,Moderate,No,Leaf litter
+"Oct 21, 2026",30,30,24,8,54,38,22.5,Moist,Yes,Zucchini
+"Oct 22, 2026",30,30,24,8,54,38,22.5,Moderate,No,Leaf litter
+"Oct 23, 2026",30,30,26,8,56,38,22.9,Dry,No,Fish flakes
+"Oct 24, 2026",30,30,27,16,57,46,23.3,Moist,Yes,Leaf litter
+"Oct 25, 2026",30,30,25,16,55,46,23.8,Moist,No,Carrot
+"Oct 26, 2026",30,30,25,16,55,46,23.9,Moderate,No,Leaf litter
+"Oct 27, 2026",30,30,25,16,55,46,21.1,Moist,Yes,Zucchini
+"Oct 28, 2026",30,30,25,16,55,46,21.3,Moderate,No,Leaf litter
+"Oct 29, 2026",30,30,25,16,55,46,21.8,Dry,No,Fish flakes
+"Oct 30, 2026",30,30,25,16,55,46,21.9,Moist,Yes,Leaf litter
+"Oct 31, 2026",30,30,25,16,55,46,22.3,Moist,No,Carrot
+"Nov 1, 2026",30,30,25,16,55,46,22.1,Moderate,No,Leaf litter
+"Nov 2, 2026",30,30,25,16,55,46,22.6,Moist,Yes,Zucchini
+"Nov 3, 2026",30,30,25,16,55,46,23,Moderate,No,Leaf litter
+"Nov 4, 2026",30,30,25,16,55,46,23.2,Dry,No,Fish flakes
+"Nov 5, 2026",30,30,25,16,55,46,23.1,Moist,Yes,Leaf litter
+"Nov 6, 2026",30,30,25,16,55,46,23.1,Moist,No,Carrot
+"Nov 7, 2026",30,30,25,16,55,46,23.6,Moderate,No,Leaf litter
+"Nov 8, 2026",30,30,27,15,57,45,24,Moist,Yes,Zucchini
+"Nov 9, 2026",30,30,26,15,56,45,21.2,Moderate,No,Leaf litter
+"Nov 10, 2026",30,30,28,15,58,45,21.6,Dry,No,Fish flakes
+"Nov 11, 2026",30,30,28,15,58,45,21.9,Moist,Yes,Leaf litter
+"Nov 12, 2026",30,30,28,15,58,45,22.2,Moist,No,Carrot
+"Nov 13, 2026",30,30,28,15,58,45,22,Moderate,No,Leaf litter
+"Nov 14, 2026",30,30,28,15,58,45,22.4,Moist,Yes,Zucchini
+"Nov 15, 2026",30,30,28,15,58,45,22.8,Moderate,No,Leaf litter
+"Nov 16, 2026",30,30,28,15,58,45,23,Dry,No,Fish flakes
+"Nov 17, 2026",30,30,28,15,58,45,22.8,Moist,Yes,Leaf litter
+"Nov 18, 2026",30,30,28,15,58,45,22.9,Moist,No,Carrot
+"Nov 19, 2026",30,30,28,24,58,54,23.3,Moderate,No,Leaf litter
+"Nov 20, 2026",31,30,28,24,59,54,23.5,Moist,Yes,Zucchini
+"Nov 21, 2026",31,30,28,24,59,54,23.5,Moderate,No,Leaf litter
+"Nov 22, 2026",31,30,28,24,59,54,21.4,Dry,No,Fish flakes
+"Nov 23, 2026",31,30,28,24,59,54,21.3,Moist,Yes,Leaf litter
+"Nov 24, 2026",31,30,28,24,59,54,21.8,Moist,No,Carrot
+"Nov 25, 2026",31,30,28,24,59,54,21.5,Moderate,No,Leaf litter
+"Nov 26, 2026",31,30,28,24,59,54,21.8,Moist,Yes,Zucchini
+"Nov 27, 2026",31,30,28,24,59,54,22.1,Moderate,No,Leaf litter
+"Nov 28, 2026",31,31,28,24,59,55,22.1,Dry,No,Fish flakes
+"Nov 29, 2026",32,31,28,24,60,55,22.5,Moist,Yes,Leaf litter
+"Nov 30, 2026",32,31,28,24,60,55,23.2,Moist,No,Carrot
+"Dec 1, 2026",32,31,28,24,60,55,22.8,Moderate,No,Leaf litter
+"Dec 2, 2026",32,31,28,24,60,55,23.6,Moist,Yes,Zucchini
+"Dec 3, 2026",32,31,28,24,60,55,23.8,Moderate,No,Leaf litter
+"Dec 4, 2026",32,31,28,24,60,55,23.7,Dry,No,Fish flakes
+"Dec 5, 2026",32,31,28,24,60,55,21.4,Moist,Yes,Leaf litter
+"Dec 6, 2026",32,31,28,24,60,55,21.5,Moist,No,Carrot
+"Dec 7, 2026",32,31,28,30,60,61,21.9,Moderate,No,Leaf litter
+"Dec 8, 2026",33,31,28,30,61,61,21.8,Moist,Yes,Zucchini
+"Dec 9, 2026",33,31,28,30,61,61,21.9,Moderate,No,Leaf litter
+"Dec 10, 2026",33,31,28,30,61,61,21.9,Dry,No,Fish flakes
+"Dec 11, 2026",33,31,28,30,61,61,22.8,Moist,Yes,Leaf litter
+"Dec 12, 2026",33,32,28,30,61,62,23,Moist,No,Carrot
+"Dec 13, 2026",33,32,28,30,61,62,22.6,Moderate,No,Leaf litter
+"Dec 14, 2026",33,32,28,30,61,62,23.2,Moist,Yes,Zucchini
+"Dec 15, 2026",33,32,35,30,68,62,23.4,Moderate,No,Leaf litter
+"Dec 16, 2026",33,32,35,30,68,62,23.4,Dry,No,Fish flakes
+"Dec 17, 2026",34,32,35,30,69,62,23.9,Moist,Yes,Leaf litter
+"Dec 18, 2026",34,32,35,30,69,62,21.1,Moist,No,Carrot

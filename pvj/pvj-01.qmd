@@ -3,3 +3,46 @@ title: "Personal Visualization Journey"
 ---
 
 Add content here
+
+
+```{r}
+library(tidyverse)
+
+isopods <- read_csv("/Users/kle/Documents/GitHub/ds112-portfolio-khue2608/real_isopod_data.csv")
+
+glimpse(isopods)
+head(isopods)
+```
+```{r}
+library(tidyverse)
+
+
+isopods_long <- isopods %>%
+  pivot_longer(
+    cols = c("Orange juveniles", "Black juveniles"),
+    names_to = "Morph",
+    values_to = "Juveniles"
+  ) %>%
+  mutate(
+    Date = as.Date(Date, format = "%b %d, %Y")
+  )
+
+ggplot(isopods_long,
+       aes(x = Date, y = Juveniles, color = Morph)) +
+  geom_line(linewidth = 1.2) +
+  scale_color_manual(
+    values = c(
+      "Orange juveniles" = "darkorange",
+      "Black juveniles" = "black"
+    )
+  ) +
+  labs(
+    title = "Orange vs. Black Isopod Juvenile Population",
+    subtitle = "Changes in juvenile counts over time",
+    x = "Date",
+    y = "Number of Juveniles",
+    color = "Juvenile Color",
+  ) +
+  theme_minimal()
+```
+
